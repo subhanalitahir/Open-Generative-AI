@@ -1,6 +1,6 @@
 {
   "name": "open-generative-ai",
-  "description": "Open-source alternative to HF AI — AI image, video, cinema and lip sync studio",
+  "description": "Open-source alternative to HF AI \u2014 AI image, video, cinema and lip sync studio",
   "homepage": "https://github.com/Anil-matcha/Open-Generative-AI",
   "private": true,
   "version": "2.0.0",
@@ -12,15 +12,15 @@
     "packages/Open-AI-Design-Agent/packages/design-agent"
   ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
-    "build:studio": "npm run build -w studio",
-    "build:workflow": "npm run build -w workflow-builder",
-    "build:agent": "npm run build -w ai-agent",
-    "build:design": "npm run build -w design-agent",
-    "build:packages": "npm run build:workflow && npm run build:agent && npm run build:design && npm run build:studio",
+    "build:studio": "node init && npm run build -w studio",
+    "build:workflow": "node init && npm run build -w workflow-builder",
+    "build:agent": "node init && npm run build -w ai-agent",
+    "build:design": "node init && npm run build -w design-agent",
+    "build:packages": "node init && npm run build:workflow && npm run build:agent && npm run build:design && npm run build:studio",
     "setup": "git submodule update --init --recursive && npm install && npm run build:packages",
     "vite:dev": "vite",
     "vite:build": "vite build",
@@ -39,7 +39,7 @@
   "build": {
     "appId": "ai.generative.open",
     "productName": "Open Generative AI",
-    "copyright": "Copyright © 2025",
+    "copyright": "Copyright \u00a9 2025",
     "directories": {
       "output": "release"
     },
